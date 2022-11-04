@@ -1,0 +1,132 @@
+/* ******************** */
+/*  LAYOUT */
+/* ******************** */
+
+.container {
+    padding: 0 2rem 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+
+    @media screen and (min-width: 55rem) {
+        gap: 10rem;
+    }
+}
+
+.btn-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @media screen and (min-width: 55rem) {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media screen and (min-width: 55rem) {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media screen and (min-width: 55rem) {
+        flex-direction: row;
+        align-items: baseline;
+        max-width: 80%;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+
+    > * {
+        @media screen and (min-width: 55rem) {
+            flex: 1 1 0;
+        }
+    }
+}
+
+.system {
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+
+        @media screen and (min-width: 55rem) {
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 80%;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    @media screen and (min-width: 55rem) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.logo-link-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    @media screen and (min-width: 55rem) {
+        flex-direction: row;
+        gap: 8rem;
+    }
+}
+
+.link-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    @media screen and (min-width: 55rem) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem 4rem;
+
+        li {
+            justify-self: flex-start;
+        }
+
+        li:nth-child(2) {
+            grid-column: 1 / 2;
+            grid-row: 2;
+        }
+
+        li:nth-child(4) {
+            grid-column: 2 / 3;
+            grid-row: 2;
+        }
+    }
+}
+
+.social-media {
+    ul {
+        display: flex;
+        gap: 2rem;
+    }
+}

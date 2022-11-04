@@ -1,0 +1,96 @@
+/* ******************** */
+/*  MAIN-CONTENT */
+/* ******************** */
+
+.tracking {
+    .intro {
+        margin-bottom: 5rem;
+    }
+
+    .com-img-box {
+        overflow: hidden;
+        
+        @media screen and (min-width: 55rem) {
+            width: 55%;
+        }  
+
+        img {
+            @media screen and (min-width: 55rem) {
+                width: 100%;
+                transform: translateX(-10%);
+            }
+        }
+    }
+
+    .process-box {
+        @media screen and (min-width: 55rem) {
+            width: 45%;
+            align-self: center;
+        }
+    }
+
+    .process-item > * {
+        @media screen and (min-width: 55rem) {
+            text-align: left;
+            max-width: 22rem;
+        }
+    }
+
+    .process-item > p {
+        @media screen and (min-width: 55rem) {
+            font-size: 1.05rem;
+        }
+    }
+
+    .process-flow > * + * {
+        margin-top: 3rem;
+
+        @media screen and (min-width: 55rem) {
+            margin-top: 4rem;
+        }
+    }   
+}
+
+.accessibility {
+    p {
+        margin-bottom: 3rem;
+    }
+
+    img {
+        margin: 0 auto; 
+}
+}
+
+.workflow {
+    > p {
+        margin-bottom: 6rem;
+    }
+
+    img {
+        margin: 0 auto;
+        margin-bottom: 2.5rem;
+    }
+
+    .feature-box {
+        > * {
+            > p {
+            @media screen and (min-width: 55rem) {
+                font-size: 1rem;
+                }
+            }
+        }
+            
+    }
+}
+
+.system {
+    img {
+        max-width: 8rem;
+    }
+}
+
+.download {
+    > p {
+        margin-bottom: 3rem;
+    }
+}

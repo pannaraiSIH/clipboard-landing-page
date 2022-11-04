@@ -1,0 +1,47 @@
+/* ******************** */
+/*  FOOTER */
+/* ******************** */
+
+.footer {
+    background-color: hsl(195, 18%, 96%);
+    text-align: center;
+    padding: 3rem 2rem 3rem;
+
+    @media screen and (min-width: 55rem) {
+        padding: 2rem;
+    }
+
+    img {
+        width: 3.5rem;
+    }
+
+    .link-list {
+        a {
+            &:hover, :focus {
+               color: var(--strong-cyan);
+            }
+
+            @media screen and (min-width: 55rem) {
+                font-size: 1.1rem;
+            }
+        }
+        
+    }
+
+    .social-media {
+        a {
+            font-size: 1.6rem;
+        }
+
+        .fa-brands {
+            background-image: linear-gradient(to top, hsl(171, 66%, 44%), hsl(233, 100%, 69%));
+            background-size: 100%;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            &:hover {
+                transform: scale(0.9);
+            }
+        }      
+    }
+}
